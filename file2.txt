@@ -1,0 +1,2 @@
+This is a method to write a file
+This is second lineThis is second lineThis is second line

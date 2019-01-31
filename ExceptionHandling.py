@@ -7,10 +7,13 @@
 #print(f.read())
 
 try:
-    f = open('file1.txt', 'r')
-    
+    f = open('file.txt', 'r')
+#    var = fresh
 except FileNotFoundError:
     print('File does not exist')
+    
+except NameError:
+    print('Variable not defined')
 
 except Exception:
     print('Something went wrong')

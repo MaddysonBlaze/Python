@@ -2,14 +2,14 @@
 
 # LEGB --> Local, Enclosing, Global, Builtins
 
-x = 'global x'
+#x = 'global x'
 
-def func():
-    x = 'local x'
-    print(x)
-
-func()
-print(x)
+#def func():
+##    x = 'local x'
+#    print(x)
+#
+#func()
+#print(x)
 
 
 #x = 'global x'
@@ -26,24 +26,24 @@ print(x)
 #def min():
 #    print('min function overriden')
 #
-#print(min([4,2,3,6]))
+#print(min())
 
 
-#x = 'global x'
-#
-#def outer():
-#    x = 'outer x'
-#    
-#    def inner():
+x = 'global x'
+
+def outer():
+    x = 'outer x'
+    
+    def inner():
 #        nonlocal x
-#        x = 'inner x'
-#        print(x)
-#    
-#    inner()
-#    print(x)
-#
-#print(x)
-#outer()
+        x = 'inner x'
+        print(x)
+    
+    inner()
+    print(x)
 
+
+outer()
+print(x)
 
 
